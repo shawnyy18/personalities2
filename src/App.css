@@ -1,0 +1,82 @@
+body {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #dbe3ec;
+  color: dimgray;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.CalculatorContainer {
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #4a5568;
+}
+
+.Display {
+  background-color: #e2e8f0;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2d3748;
+}
+
+.ButtonContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 10px;
+}
+
+button {
+  background-color: #1a202c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2d3748;
+}
+
+button.special {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+button.special:hover {
+  background-color: #e59500;
+}
+
+button.span-two {
+  grid-column: span 2; /* Make buttons span 2 columns */
+}
+
+@media (max-width: 400px) {
+  .CalculatorContainer {
+    width: 90%;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 12px;
+  }
+}
